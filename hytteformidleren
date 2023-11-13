@@ -1,1 +1,14 @@
-Oppgave 1(Tegn Datamodellen - Hytteformidleren.jog
+Oppgave 1(Tegn Datamodellen - Hytteformidleren.jpg
+
+
+
+Oppgave 2
+- Eier og Kunde tabellene har den samme primærnøkkelen(MobilNr)
+  - A ) Hva er utfordringen med denne strukturen?
+  - B ) Vurder og tabellene Eier og Kunde kan slås sammen til en en tabell, med eventuell ednring av tabelldefinisjonen. Hva kan da bli utfordringen?
+
+  A)
+    - Redundands: Unødvedning redundans i databasen, informasjon om eier kan både være lagret i "Kunde" og "Eier, noe som kan føre til større lagringsbehov.
+    - Konsistentsproblemer: Hvis informasjon om en person som både er eier og en kunde kan det føre til konsistensproblemer
+      Hvis informasjon må endres, må det endres i begge tabeller
+    - Strukturen gir ikke en klar indikasjon på hva som skiller en "Eier" fra en "Kunde" 
