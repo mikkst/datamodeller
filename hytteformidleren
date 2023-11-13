@@ -12,3 +12,19 @@ Oppgave 2
     - Konsistentsproblemer: Hvis informasjon om en person som både er eier og en kunde kan det føre til konsistensproblemer
       Hvis informasjon må endres, må det endres i begge tabeller
     - Strukturen gir ikke en klar indikasjon på hva som skiller en "Eier" fra en "Kunde" 
+
+
+Oppgave 3
+  - I utviklingsteamet er det delte meninger om hva som er en god primærnøkkel i tabellen Utleie. Følgende
+      forslag har kommet opp:
+      Utleie(Utleienr, Hyttenr, FraDato, Kundenr, TilDato, Pris, Betalt)
+      Utleie(Hyttenr, FraDato, Kundenr, TilDato, Pris, Betalt)
+      Utleie(Hyttenr, FraDato, Kundenr, TilDato, Pris, Betalt)
+      Utleie(Kundenr, FraDato, Hyttenr, TilDato, Pris, Betalt)
+      Drøft hvilke konsekvenser de ulike forslagene til primærnøkkel i tabellen Utleie vil ha for bruk av databasen,
+      og gi en anbefaling om hvilke(t) forslag som kan være alternativ(er) i dette systemet, eventuelt om det er
+      andre alternativer som også bør vurderes
+
+    A)
+      - Forslag 2 virker best, ettersom primærnøklene her bestpr allerede av attributtene som identifiserer en utleie. 
+      - Finner ikke på noen nye nøkler, lettere struktur. 
